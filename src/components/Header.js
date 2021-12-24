@@ -19,7 +19,7 @@ const Header = (props   ) => {
             <div id="links-header-container">
                 <ul>
                     <li>
-                        <Link style={styleH1}  to='/home'>
+                        <Link style={styleH1}  to='/'>
                        <Button variant="outline-dark">Home</Button>
                        </Link>
 
