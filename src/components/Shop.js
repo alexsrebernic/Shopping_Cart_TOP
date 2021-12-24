@@ -1,18 +1,19 @@
 import { Card } from "react-bootstrap"
+import { Link } from "react-router-dom"
 import img1 from './imgShop/istockphoto-1065932456-612x612.jpg'
 import img2 from './imgShop/istockphoto-471074651-612x612.jpg'
-import img3 from './imgShop/photo-1603664454146-50b9bb1e7afa.jpeg'
+import img3 from './imgShop/depositphotos_19638723-stock-photo-fresh-orange-fruit-with-leaf.jpg'
 import img4 from './imgShop/36167947-lemon-isolated.jpg'
 import img5 from './imgShop/depositphotos_52498055-stock-photo-pumpkin.webp'
 import img6 from './imgShop/istockphoto-1043855540-612x612.jpg'
 import img7 from './imgShop/istockphoto-920478620-170667a.jpg'
-import img8 from './imgShop/pexels-lisa-109274.jpg'
+import img8 from './imgShop/marcofood190100014.jpg'
 import img9 from  './imgShop/92819506-aguacate-fresco-hass-con-mitad-aislado-sobre-fondo-blanco.jpg'
 import img10 from './imgShop/bbac32ebe85a4164d12fe9484b4bf198.jpg'
 import img11 from './imgShop/istockphoto-612833996-170667a.jpg'
 import img12 from './imgShop/istockphoto-186861864-170667a.jpg'
 
-const items = [
+export const items = [
     {name:"Banana",price:4,img : img1,id:1},
     {name:"Apple",price:2,img : img2,id:2},
     {name:"Orange",price:4,img : img3,id:3},
@@ -26,9 +27,12 @@ const items = [
     {name:"Pomegranate",price:9,img :img11 ,id:11},
     {name:"Pear",price:2,img :img12 ,id:12},
 ]
+let styleLink = {
+    'color':'black',
+    'textDecoration':"none"
+}
 
-
-const Shop = () => {
+export const Shop = () => {
     let firstArray = items.slice(0,4)
     let secondArray = items.slice(4,8)
     let thirdArray = items.slice(8)
@@ -37,50 +41,51 @@ const Shop = () => {
             <div className="col">
             {firstArray.map(item => {
                return(
-                <Card style={{ width: '18rem' ,height:'28rem'}} key={item.id}>
-                
-            <Card.Img className="image" variant="top" src={item.img}/>
-            <Card.Body>
-                <Card.Title>{item.name}</Card.Title>
-                <Card.Text>
-                
-                </Card.Text>
-            </Card.Body>
-            </Card>
+            <Link style={styleLink} to={`/shop/${item.id}`} key={item.id}>
+                <Card className='card' style={{ width: '18rem' ,height:'23rem'}} >
+                    <Card.Img className="image" variant="top" src={item.img}/>
+                <Card.Body>
+                    <Card.Title className="border-bottom w-100 text-center">{item.name}</Card.Title>
+                    <Card.Text className="textCard w-100">
+                    Price: ${item.price}
+                    </Card.Text>
+                </Card.Body>
+                </Card>
+           </Link>
                )
-           })}
-                   
-               
+           })} 
             </div>
             <div className="col">
             {secondArray.map(item => {
                return(
-                <Card style={{ width: '18rem' ,height:'28rem'}} key={item.id}>
-                
-            <Card.Img className="image" variant="top" src={item.img}/>
-            <Card.Body>
-                <Card.Title>{item.name}</Card.Title>
-                <Card.Text>
-               
-                </Card.Text>
-            </Card.Body>
-            </Card>
+            <Link style={styleLink} to={`/shop/${item.id}`} key={item.id}>
+                <Card className='card' style={{ width: '18rem' ,height:'23rem'}} >
+                    <Card.Img className="image" variant="top" src={item.img}/>
+                <Card.Body>
+                    <Card.Title className="border-bottom w-100 text-center">{item.name}</Card.Title>
+                    <Card.Text className="textCard w-100">
+                    Price: ${item.price}
+                    </Card.Text>
+                </Card.Body>
+                </Card>
+           </Link>
                )
            })}
             </div>
             <div className="col">
             {thirdArray.map(item => {
                return(
-                <Card style={{ width: '18rem' ,height:'28rem'}} key={item.id}>
-                
-            <Card.Img className="image" variant="top" src={item.img}/>
-            <Card.Body>
-                <Card.Title>{item.name}</Card.Title>
-                <Card.Text>
-                
-                </Card.Text>
-            </Card.Body>
-            </Card>
+            <Link style={styleLink} to={`/shop/${item.id}`} key={item.id}>
+                <Card className='card' style={{ width: '18rem' ,height:'23rem'}} >
+                    <Card.Img className="image" variant="top" src={item.img}/>
+                <Card.Body>
+                    <Card.Title className="border-bottom w-100 text-center">{item.name}</Card.Title>
+                    <Card.Text className="textCard w-100">
+                    Price: ${item.price}
+                    </Card.Text>
+                </Card.Body>
+                </Card>
+           </Link>
                )
            
            })}
@@ -89,4 +94,3 @@ const Shop = () => {
     )
 
 }
-export default Shop
