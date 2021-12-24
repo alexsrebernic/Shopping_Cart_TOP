@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Shopping_Cart_TOP/static/css/main.5a9e5dce.css",
-    "main.js": "/Shopping_Cart_TOP/static/js/main.ea2b3057.js",
+    "main.js": "/Shopping_Cart_TOP/static/js/main.5d74885a.js",
     "static/media/pexels-lisa-3978830.jpg": "/Shopping_Cart_TOP/static/media/pexels-lisa-3978830.a5cae4dfb15661f92f47.jpg",
     "static/media/pexels-daria-shevtsova-1824354.jpg": "/Shopping_Cart_TOP/static/media/pexels-daria-shevtsova-1824354.c4360ac6dbc36310b2b1.jpg",
     "static/media/pexels-engin-akyurt-1435735.jpg": "/Shopping_Cart_TOP/static/media/pexels-engin-akyurt-1435735.2c67289e756c01a6646a.jpg",
@@ -25,10 +25,10 @@
     "static/media/92819506-aguacate-fresco-hass-con-mitad-aislado-sobre-fondo-blanco.jpg": "/Shopping_Cart_TOP/static/media/92819506-aguacate-fresco-hass-con-mitad-aislado-sobre-fondo-blanco.0e1c6f599a2bc326f0e9.jpg",
     "index.html": "/Shopping_Cart_TOP/index.html",
     "main.5a9e5dce.css.map": "/Shopping_Cart_TOP/static/css/main.5a9e5dce.css.map",
-    "main.ea2b3057.js.map": "/Shopping_Cart_TOP/static/js/main.ea2b3057.js.map"
+    "main.5d74885a.js.map": "/Shopping_Cart_TOP/static/js/main.5d74885a.js.map"
   },
   "entrypoints": [
     "static/css/main.5a9e5dce.css",
-    "static/js/main.ea2b3057.js"
+    "static/js/main.5d74885a.js"
   ]
 }
