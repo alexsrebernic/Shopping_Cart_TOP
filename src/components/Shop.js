@@ -37,9 +37,8 @@ export const Shop = () => {
     let secondArray = items.slice(4,8)
     let thirdArray = items.slice(8)
     return(
-        <div id="shop-container" className="container d-flex">
-            <div className="col">
-            {firstArray.map(item => {
+        <div id="shop-container" className="container">
+              {items.map(item => {
                return(
             <Link style={styleLink} to={`/shop/${item.id}`} key={item.id}>
                 <Card className='card' style={{ width: '18rem' ,height:'23rem'}} >
@@ -54,42 +53,6 @@ export const Shop = () => {
            </Link>
                )
            })} 
-            </div>
-            <div className="col">
-            {secondArray.map(item => {
-               return(
-            <Link style={styleLink} to={`/shop/${item.id}`} key={item.id}>
-                <Card className='card' style={{ width: '18rem' ,height:'23rem'}} >
-                    <Card.Img className="image" variant="top" src={item.img}/>
-                <Card.Body>
-                    <Card.Title className="border-bottom w-100 text-center">{item.name}</Card.Title>
-                    <Card.Text className="textCard w-100">
-                    Price: ${item.price}
-                    </Card.Text>
-                </Card.Body>
-                </Card>
-           </Link>
-               )
-           })}
-            </div>
-            <div className="col">
-            {thirdArray.map(item => {
-               return(
-            <Link style={styleLink} to={`/shop/${item.id}`} key={item.id}>
-                <Card className='card' style={{ width: '18rem' ,height:'23rem'}} >
-                    <Card.Img className="image" variant="top" src={item.img}/>
-                <Card.Body>
-                    <Card.Title className="border-bottom w-100 text-center">{item.name}</Card.Title>
-                    <Card.Text className="textCard w-100">
-                    Price: ${item.price}
-                    </Card.Text>
-                </Card.Body>
-                </Card>
-           </Link>
-               )
-           
-           })}
-            </div>
         </div>
     )
 
