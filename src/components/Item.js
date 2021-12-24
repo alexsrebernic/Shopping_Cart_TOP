@@ -5,7 +5,6 @@ import styled from "styled-components";
     align-items:center;
     height:600px;
     width:100%;
-    background-color:#00008B;
     color: #fff;
     margin-left: 15px;
     font-size:4em

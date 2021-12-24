@@ -20,10 +20,13 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 #header-container {
+  top: 0;
+  position: fixed;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,6 +38,7 @@
           justify-content: space-between;
   width: 80%;
   min-height: 10vh;
+  z-index: 10;
 }
 
 #header-container #title-header-container {
@@ -73,11 +77,17 @@
   list-style: none;
 }
 
+#header-container #links-header-container ul li svg {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
 #container-home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 85vh;
+  height: 82vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -94,6 +104,17 @@
 
 #container-home .rec-carousel button {
   width: 2.5%;
+  background-color: white;
+}
+
+#container-home .rec-carousel button:hover {
+  background-color: black;
+  color: white;
+}
+
+#container-home .rec-carousel button:focus {
+  background-color: black;
+  color: white;
 }
 
 #container-home .rec-carousel img {
@@ -115,6 +136,18 @@
 #container-home .rec-pagination button {
   width: 10px;
   height: 10px;
+}
+
+#container-home .rec-pagination button:hover {
+  -webkit-box-shadow: 0 0 1px 3px black;
+          box-shadow: 0 0 1px 3px black;
+  background-color: white;
+}
+
+#container-home .rec-pagination button:focus {
+  background-color: white;
+  -webkit-box-shadow: 0 0 1px 3px black;
+          box-shadow: 0 0 1px 3px black;
 }
 
 #container-home #title-hero-home {
@@ -141,7 +174,7 @@
 }
 
 #container-home button {
-  width: 30%;
+  width: 100%;
 }
 
 #footer {
@@ -159,5 +192,32 @@
 
 #footer div svg {
   margin-left: 15px;
+}
+
+#shop-container {
+  margin-top: 100px;
+  height: 210vh;
+}
+
+#shop-container .col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#shop-container img {
+  height: 17em;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=main.css.map */

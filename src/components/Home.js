@@ -18,21 +18,22 @@ const Home = () => {
                 <span>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat tempore voluptates consequatur alias. Asperiores soluta laudantium, eaque nesciunt excepturi exercitationem?
                 </span>
-                
+                <Link to='/shop'>
                 <Button variant="outline-dark">Go shop</Button>
+                </Link>
             </div>
             <div id="carousel-home">
             <>
-                <Carousel itemsToShow={2} breakPoints={breakPoints}>
-                    <Item ><img alt="carousel fruit " src={require('./img/pexels-pixabay-35629.jpg')}/></Item>
-                    <Item ><img alt="carousel fruit "  src={require('./img/pexels-oleg-magni-1024545.jpg')}/></Item>
-                    <Item ><img alt="carousel fruit " src={require('./img/pexels-maria-lindsey-content-creator-1453713.jpg')}/></Item>
-                    <Item ><img alt="carousel fruit " src={require('./img/pexels-marco-antonio-victorino-2363347.jpg')}/></Item>
-                    <Item ><img alt="carousel fruit " src={require('./img/pexels-lisa-3978830.jpg')}/></Item>
-                    <Item ><img alt="carousel fruit " src={require('./img/pexels-lisa-1395958.jpg')}/></Item>
-                    <Item ><img alt="carousel fruit " src={require('./img/pexels-engin-akyurt-1435735.jpg')}/></Item>
-                    <Item ><img alt="carousel fruit "src={require('./img/pexels-dominika-roseclay-2208836.jpg')}/></Item>
-                    <Item ><img alt="carousel fruit "src={require('./img/pexels-daria-shevtsova-1824354.jpg')}/></Item>
+                <Carousel itemsToShow={2} enableAutoPlay autoPlaySpeed={2000} breakPoints={breakPoints}>
+                    <Item ><img alt="carousel fruit " src={require('./imgCarousel/pexels-pixabay-35629.jpg')}/></Item>
+                    <Item ><img alt="carousel fruit "  src={require('./imgCarousel/pexels-oleg-magni-1024545.jpg')}/></Item>
+                    <Item ><img alt="carousel fruit " src={require('./imgCarousel/pexels-maria-lindsey-content-creator-1453713.jpg')}/></Item>
+                    <Item ><img alt="carousel fruit " src={require('./imgCarousel/pexels-marco-antonio-victorino-2363347.jpg')}/></Item>
+                    <Item ><img alt="carousel fruit " src={require('./imgCarousel/pexels-lisa-3978830.jpg')}/></Item>
+                    <Item ><img alt="carousel fruit " src={require('./imgCarousel/pexels-lisa-1395958.jpg')}/></Item>
+                    <Item ><img alt="carousel fruit " src={require('./imgCarousel/pexels-engin-akyurt-1435735.jpg')}/></Item>
+                    <Item ><img alt="carousel fruit "src={require('./imgCarousel/pexels-dominika-roseclay-2208836.jpg')}/></Item>
+                    <Item ><img alt="carousel fruit "src={require('./imgCarousel/pexels-daria-shevtsova-1824354.jpg')}/></Item>
                 </Carousel>
             </>
             </div>
