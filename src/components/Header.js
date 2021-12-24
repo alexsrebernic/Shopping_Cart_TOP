@@ -6,7 +6,6 @@ let styleH1 = {
     'textDecoration':"none"
 }
 const Header = (props   ) => {
-    console.log(props)
     return(
         <div id="header-container">
             <div id="title-header-container">

@@ -25,6 +25,8 @@
 
 #header-container {
   top: 0;
+  -webkit-box-shadow: -1px 1px 10px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: -1px 1px 10px 0px rgba(0, 0, 0, 0.4);
   position: fixed;
   background-color: white;
   display: -webkit-box;
@@ -36,9 +38,13 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 80%;
+  width: 100%;
   min-height: 10vh;
   z-index: 10;
+}
+
+#header-container h1 {
+  margin-left: 5em;
 }
 
 #header-container #title-header-container {
@@ -300,8 +306,20 @@
 }
 
 #container-item #buy-container input {
+  width: 20%;
   margin-right: 10px;
   height: 2.3em;
   border: 1px solid black;
+}
+
+.container-item-offcanvas {
+  border: 1px solid  #dfdfdf;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.container-item-offcanvas h2 {
+  border-bottom: 1px solid #dfdfdf;
 }
 /*# sourceMappingURL=main.css.map */

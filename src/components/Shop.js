@@ -14,18 +14,18 @@ import img11 from './imgShop/istockphoto-612833996-170667a.jpg'
 import img12 from './imgShop/istockphoto-186861864-170667a.jpg'
 
 export const items = [
-    {name:"Banana",price:4,img : img1,id:1},
-    {name:"Apple",price:2,img : img2,id:2},
-    {name:"Orange",price:4,img : img3,id:3},
-    {name:"Lemon",price:3,img : img4,id:4},
-    {name:"Pumpkin",price:10,img : img5 ,id:5},
-    {name:"Kiwi",price:5,img : img6,id:6},
-    {name:"Green apple",price:3,img : img7,id:7},
-    {name:"Cherry",price:1,img :img8 ,id:8},
-    {name:"Avocado",price:7,img: img9,id:9},
-    {name:"Watermelon",price:12,img :img10 ,id:10},
-    {name:"Pomegranate",price:9,img :img11 ,id:11},
-    {name:"Pear",price:2,img :img12 ,id:12},
+    {name:"Banana",price:4,img : img1,id:1,quantity:0,total:0},
+    {name:"Apple",price:2,img : img2,id:2,quantity:0,total:0},
+    {name:"Orange",price:4,img : img3,id:3,quantity:0,total:0},
+    {name:"Lemon",price:3,img : img4,id:4,quantity:0,total:0},
+    {name:"Pumpkin",price:10,img : img5 ,id:5,quantity:0,total:0},
+    {name:"Kiwi",price:5,img : img6,id:6,quantity:0,total:0},
+    {name:"Green apple",price:3,img : img7,id:7,quantity:0,total:0},
+    {name:"Cherry",price:1,img :img8 ,id:8,quantity:0,total:0},
+    {name:"Avocado",price:7,img: img9,id:9,quantity:0,total:0},
+    {name:"Watermelon",price:12,img :img10 ,id:10,quantity:0,total:0},
+    {name:"Pomegranate",price:9,img :img11 ,id:11,quantity:0,total:0},
+    {name:"Pear",price:2,img :img12 ,id:12,quantity:0,total:0},
 ]
 let styleLink = {
     'color':'black',
