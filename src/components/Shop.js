@@ -33,9 +33,7 @@ let styleLink = {
 }
 
 export const Shop = () => {
-    let firstArray = items.slice(0,4)
-    let secondArray = items.slice(4,8)
-    let thirdArray = items.slice(8)
+ 
     return(
         <div id="shop-container" className="container">
               {items.map(item => {

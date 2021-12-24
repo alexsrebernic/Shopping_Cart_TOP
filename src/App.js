@@ -77,7 +77,7 @@ function App() {
       <BrowserRouter>
         <Header  offCanvas={<UseOffCanvas placement="end" name="end"/>}/>
         <Routes>
-          <Route path="/home" exact element={<Home/>}/>
+          <Route path="/" exact element={<Home/>}/>
           <Route path="/shop" exact element={<Shop/>}/>
           <Route path="/shop/:id" element={<ItemShop submitItemToShoppingCart={submitItemToShoppingCart} setItems={setItems}/>}/>
         </Routes>
